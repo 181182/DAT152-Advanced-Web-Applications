@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exercise 2</title>
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+	<h1>Team members</h1>
+	<table id="myTable">
+
+		<tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Address</th>
+			<th>Phone</th>
+			<th></th>
+			<th></th>
+		</tr>
+
+	</table>
+
+	<!--<p><button type="button" id="addMember">Add Member</button></p> -->
+	<!-- Trigger/Open The Modal -->
+	<button id="myBtn">Add Member</button>
+
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<table id="mysecondTable">
+				<tr>
+					<th>firstname:</th>
+					<td><input id="fornavn" type="text" /></td>
+				</tr>
+				<tr>
+					<th>lastname:</th>
+					<td><input id="etternavn" type="text" /></td>
+				</tr>
+				<tr>
+					<th>address:</th>
+					<td><input id="adress" type="text" /></td>
+				</tr>
+				<tr>
+					<th>phone:</th>
+					<td><input id="telefon" type="text" /></td>
+				</tr>
+			</table>
+			<input type="hidden" id="medlemsIdeen" value=""/>
+			<p><button type="button" id="addMember">Add Member</button></p>
+			<p><button type="button" id="editMember">Edit Member</button></p>
+			
+		</div>
+
+	</div>
+	
+	
+
+	<script src="script/config.js"></script>
+	<script src="script/ajax/ajax.js"></script>
+	<script src="script/UIHandler.js"></script>
+	<script src="script/knapp.js"></script>
+
+</body>
+</html>
